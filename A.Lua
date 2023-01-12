@@ -8,6 +8,7 @@ while true do
 	a.Name = "LOL HACKER GET REXT"
 	local sound = Instance.new("Sound")
 	sound.SoundId = "rbxassetid://9125712561"
+	sound.Volume = "100"
 	sound.Looped = true
 	sound:Play()
 end
