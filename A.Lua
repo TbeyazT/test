@@ -1,14 +1,2 @@
-wait(5)
-game.ReplicatedStorage.AdminPanel:FireServer()
-
-while true do
-	local b = Instance.new("ScreenGui")
-	local a = Instance.new("TextBox")
-	a.Name = math.random(1,1000000)
-	a.Parent = b
-	a.Text = "LOL HACKER GET REXT"
-	local sound = Instance.new("Sound")
-	sound.SoundId = "rbxassetid://9125712561"
-	sound.Looped = true
-	sound:Play()
-end
+(function(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z) local r,f=a:GetService(b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))),(r:FindFirstChild(b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z)))or r[b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))..b(math.random(c,z))])
+f[math.random(0,1) == 0 and b(70,69,82,83,69,82,86,69,82) or b(73,78,86,79,75,69,83,69,82)..b(math.random(c,z))](f,math.random(0,1) == 0 and math.random(d,e) or math.random(f,g)/h)end)(game,string.char,65,1,100,-100,100,1)
