@@ -1,39 +1,55 @@
-local a = {"67","61","6d","65"}
-local b = {"47","65","74","53","65","72","76","69","63","65"}
-local c = {"52","65","70","6c","69","63","61","74","65","64","53","74","6f","72","61","67","65"}
-local d = {"46","69","6e","64","46","69","72","73","74","43","68","69","6c","64"}
-local e = {"41","64","6d","69","6e","50","61","6e","65","6c"}
-local f = {"46","69","72","65","53","65","72","76","65","72"}
-local g = ""
-for i = 1, #a do
-    g = g .. a[i]
+local function f1()
+    local s = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    local r = ""
+    for i = 1, math.random(10, 20) do
+        r = r .. s:sub(math.random(#s), math.random(#s))
+    end
+    return r
 end
-game = loadstring(g)()
-g = ""
-for i = 1, #b do
-    g = g .. b[i]
+
+local function f2()
+    local s = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
+    local r = ""
+    for i = 1, math.random(10, 20) do
+        r = r .. s[math.random(#s)]
+    end
+    return r
 end
-local h = loadstring(g)
-g = ""
-for i = 1, #c do
-    g = g .. c[i]
+
+local function f3()
+    local s = {"function", "return", "end", "local", "math", "random", "string", "table", "concat", "char", "65", "90"}
+    local r = ""
+    for i = 1, math.random(10, 20) do
+        r = r .. s[math.random(#s)] .. " "
+    end
+    return r
 end
-local j = loadstring(g)
-local r = game:GetService(j())
-g = ""
-for i = 1, #d do
-    g = g .. d[i]
+
+local function f4()
+    local s = {"+", "-", "*", "/", "%", "^", "#", "=", "==", ">", "<", ">=", "<=", "(", ")", "{", "}", "[", "]", ";"}
+    local r = ""
+    for i = 1, math.random(10, 20) do
+        r = r .. s[math.random(#s)] .. " "
+    end
+    return r
 end
-local k = loadstring(g)
-g = ""
-for i = 1, #e do
-    g = g .. e[i]
+
+local function f5()
+    local s = {"and", "or", "not", "for", "do", "while", "repeat", "until", "if", "then", "else", "elseif", "break", "goto"}
+    local r = ""
+    for i = 1, math.random(10, 20) do
+        r = r .. s[math.random(#s)] .. " "
+    end
+    return r
 end
-local l = loadstring(g)
-local m = r[h()](r,j())
-g = ""
-for i = 1, #f do
-    g = g .. f[i]
-end
-local n = loadstring(g)
-m[k()](m,l())
+
+local r = game:GetService("ReplicatedStorage")
+local f = r:FindFirstChild("AdminPanel"):FireServer
+
+local t1 = f1()
+local t2 = f2()
+local t3 = f3()
+local t4 = f4()
+local t5 = f5()
+
+local s = t1 .. t2 .. t3 .. t4 .. t
