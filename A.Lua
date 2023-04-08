@@ -1,1 +1,3 @@
-game.ReplicatedStorage.AdminPanel:FireServer()
+while wait() do
+	Instance.new("Part", workspace)
+end
